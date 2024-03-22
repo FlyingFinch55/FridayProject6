@@ -5,8 +5,8 @@ from tkinter import ttk
 root = Tk()
 root.title("Pack")
 
-display = ttk.Label(root, state= DISABLED)
-display.pack()
+display = ttk.Entry(root, state=DISABLED)
+display.pack(side=TOP)
 
 
 #All the frams are right here together
