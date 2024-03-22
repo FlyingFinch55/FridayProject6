@@ -8,46 +8,55 @@ root.title("Pack")
 display = ttk.Label(root, state= DISABLED)
 display.pack()
 
-one = ttk.Button(root,text="1")
-one.pack()
 
-two = ttk.Button(root, text="2")
-two.pack()
+#All the frams are right here together
+famePackOne = ttk.LabelFrame(root)
+famePackOne.pack()
+famePackTwo = ttk.LabelFrame(root)
+famePackTwo.pack()
+famePackThree = ttk.LabelFrame(root)
+famePackThree.pack()
+famePackFour = ttk.LabelFrame(root)
+famePackFour.pack()
+famePackFive = ttk.LabelFrame(root)
+famePackFive.pack()
 
-three = ttk.Button(root,text="3")
-three.pack()
+#First row
+one = ttk.Button(famePackOne,text="1")
+one.pack(side=LEFT)
+two = ttk.Button(famePackOne, text="2")
+two.pack(side=LEFT)
+three = ttk.Button(famePackOne,text="3")
+three.pack(side=LEFT)
 
-four = ttk.Button(root, text="4")
-four.pack
+#Second row
+four = ttk.Button(famePackTwo, text="4")
+four.pack(side=LEFT)
+five = ttk.Button(famePackTwo, text="5")
+five.pack(side=LEFT)
+six = ttk.Button(famePackTwo, text="6")
+six.pack(side=LEFT)
 
-five = ttk.Button(root, text="5")
-five.pack()
+#Third row
+seven = ttk.Button(famePackThree, text="7")
+seven.pack(side=LEFT)
+eight = ttk.Button(famePackThree, text="8")
+eight.pack(side=LEFT) #lol
+nine = ttk.Button(famePackThree, text="9")
+nine.pack(side=LEFT)
 
-six = ttk.Button(root, text="6")
-six.pack()
-
-seven = ttk.Button(root, text="7")
-seven.pack()
-
-eight = ttk.Button(root, text="8")
-eight.pack() #lol
-
-nine = ttk.Button(root, text="9")
-nine.pack()
-
-zero = ttk.Button(root, text="0")
+#Zero in a row by its selft
+zero = ttk.Button(famePackFour, text="0")
 zero.pack()
 
-add = ttk.Button(root, text="+")
-add.pack()
-
-sub = ttk.Button(root, text="-")
-sub.pack()
-
-multi = ttk.Button(root, text="X")
-multi.pack()
-
-div = ttk.Button(root, text="/")
-div.pack()
+#Fourth row
+add = ttk.Button(famePackFive, text="+")
+add.pack(side=LEFT)
+sub = ttk.Button(famePackFive, text="-")
+sub.pack(side=LEFT)
+multi = ttk.Button(famePackFive, text="X")
+multi.pack(side=LEFT)
+div = ttk.Button(famePackFive, text="/")
+div.pack(side=LEFT)
 
 root,mainloop()
