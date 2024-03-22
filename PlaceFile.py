@@ -3,7 +3,7 @@ from tkinter import ttk
 
 
 root = Tk()
-
+root.title("Place")
 
 
 
